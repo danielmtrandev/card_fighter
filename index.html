@@ -9,6 +9,50 @@
 </head>
 <body>
 
+<div id="arena">
+    <div class="panels-row" id="player-panels"></div>
+    <div class="panels-row" id="enemy-panels"></div>
+  </div>
+
+  <div id="status-wrapper">
+    <div class="status-box" id="player-status">
+      <div class="status-title player">Player</div>
+      <div class="status-row"><span class="stat-label">HP</span><span id="player-hp"></span></div>
+      <div class="status-row"><span class="stat-label">EN</span><span id="player-en"></span></div>
+      <div class="status-row"><span class="stat-label">Panel</span><span id="player-panel"></span></div>
+      <div class="chosen-move" id="player-action-icon"></div>
+    </div>
+    <div class="status-box" id="enemy-status">
+      <div class="status-title enemy">Enemy</div>
+      <div class="status-row"><span class="stat-label">HP</span><span id="enemy-hp"></span></div>
+      <div class="status-row"><span class="stat-label">EN</span><span id="enemy-en"></span></div>
+      <div class="status-row"><span class="stat-label">Panel</span><span id="enemy-panel"></span></div>
+      <div class="chosen-move" id="enemy-action-icon"></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <div id="move-btns">
+      <button id="move-left" title="Move Left">⬅️</button>
+      <button id="move-middle" title="Move Middle">⬆️</button>
+      <button id="move-right" title="Move Right">➡️</button>
+    </div>
+    <div id="action-btns">
+      <button id="attack" title="Attack"><span class="icon">👊</span><span class="action-label">Attack</span></button>
+      <button id="block" title="Block"><span class="icon">🛡️</span><span class="action-label">Block</span></button>
+      <button id="slip" title="Slip"><span class="icon">💨</span><span class="action-label">Slip n Slide</span></button>
+      <button id="guardbreak" title="Guard Break"><span class="icon">🔨</span><span class="action-label">Guard Break</span></button>
+      <button id="powermove" title="Power Move"><span class="icon">⚡</span><span class="action-label">Power Move</span></button>
+      <button id="clinch" title="Clinch"><span class="icon">🤝</span><span class="action-label">Clinch</span></button>
+      <button id="adrenaline" title="Adrenaline"><span class="icon">💉</span><span class="action-label">Adrenaline Surge</span></button>
+      <button id="fiftyfifty" title="Fifty Fifty"><span class="icon">🎲</span><span class="action-label">Fifty Fifty</span></button>
+      <button id="oneanddone" title="One and Done"><span class="icon">☠️</span><span class="action-label">One and Done</span></button>
+    </div>
+    <button id="restart-btn" style="display:none;">Restart</button>
+  </div>
+
+  <div id="combat-log"></div>
+
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
